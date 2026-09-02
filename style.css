@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #efd6ac;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1  {
+    color: #432534;
+    font-size: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+p {
+    color: #c44900;
+    font-size: 30px;
+    width: 50%;
+    padding: 50px;
+}
+
+img {
+    border-radius: 50%;
+    height: 400px;
+    width: 400px;
+}
