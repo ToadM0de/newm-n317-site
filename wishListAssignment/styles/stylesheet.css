@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  margin: 0;
+  padding: 40px 20px;
+  color: #222;
+}
+
+.container {
+  max-width: 650px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 150px auto;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+input,
+button {
+  font-size: 16px;
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+input {
+  border: 1px solid #ccc;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.wishList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.wishItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+.info {
+  flex: 1;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.price {
+  color: #555;
+  margin-top: 4px;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.editBtn {
+  background: #f59e0b;
+}
+
+.editBtn:hover {
+  background: #d97706;
+}
+
+.removeBtn {
+  background: #dc2626;
+}
+
+.removeBtn:hover {
+  background: #b91c1c;
+}
+
+.total {
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  border-top: 2px solid #e2e8f0;
+  margin-top: 20px;
+  padding-top: 15px;
+}
+
+.empty {
+  text-align: center;
+  color: #777;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  .wishItem {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .buttons {
+    justify-content: flex-end;
+  }
+}
